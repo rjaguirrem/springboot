@@ -1,0 +1,14 @@
+# MySQL
+server:
+  port: 9001
+spring:
+  profiles: mysql
+  datasource:
+    url: jdbc:mysql://localhost:3306/db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    #hibernate.ddl-auto: create-drop
